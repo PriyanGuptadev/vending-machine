@@ -1,7 +1,9 @@
+import 'dotenv/config';
 import { PrismaClient } from '../src/generated/prisma';
 const prisma = new PrismaClient();
 
 async function seed() {
+
    await prisma.chocolate.deleteMany();
    await prisma.userCash.deleteMany();
   await prisma.chocolate.createMany({

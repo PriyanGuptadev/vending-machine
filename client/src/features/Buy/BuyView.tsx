@@ -26,7 +26,7 @@ import type { Chocolate } from '../../api/vendingApi';
 
 // Styled components
 const CashCard = styled(Paper)(({ theme }) => ({
-  background: 'linear-gradient(135deg, #43cea2, #185a9d)',
+  background: 'linear-gradient(135deg, #0e339b, #185a9d)',
   color: 'white',
   padding: theme.spacing(3),
   borderRadius: '20px',
@@ -61,7 +61,7 @@ const SelectionCard = styled(Paper)(({ theme }) => ({
 }));
 
 const GradientButton = styled(AppButton)(({ theme }) => ({
-  background: 'linear-gradient(45deg, #FF6B6B, #4ECDC4)',
+  background: 'linear-gradient(135deg, #0e339b, #4876a3ff)',
   borderRadius: '25px',
   padding: '16px 32px',
   fontWeight: 'bold',
@@ -71,7 +71,7 @@ const GradientButton = styled(AppButton)(({ theme }) => ({
   border: 'none',
   transition: 'all 0.3s ease',
   '&:hover': {
-    background: 'linear-gradient(45deg, #FF8E8E, #6EDDD6)',
+    background: 'linear-gradient(45deg, #0e339b, #185a9d)',
     transform: 'scale(1.05)',
     boxShadow: '0 8px 25px rgba(0, 0, 0, 0.2)',
   },

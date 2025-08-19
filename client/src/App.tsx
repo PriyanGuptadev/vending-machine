@@ -16,9 +16,11 @@ import BuyView from './features/Buy';
 // Enhanced styled components
 const GradientContainer = styled(Box)(({ theme }) => ({
   minHeight: '100vh',
-  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-  padding: theme.spacing(3),
+  background: 'linear-gradient(145deg, #0e339b, #000)',
+  paddingBlock: theme.spacing(3),
   position: 'relative',
+  minWidth: '912px',
+  maxWidth: 912,
   '&::before': {
     content: '""',
     position: 'absolute',
@@ -43,16 +45,19 @@ const ModernTabs = styled(Tabs)(({ theme }) => ({
     color: 'rgba(255, 255, 255, 0.8)',
     minHeight: '70px',
     transition: 'all 0.3s ease',
+    border: 'none',
+    outline: 'none',
     '&:hover': {
       backgroundColor: alpha('#ffffff', 0.1),
     },
     '&.Mui-selected': {
       color: 'white',
       fontWeight: 'bold',
+      outline: 'none'
     }
   },
   '& .MuiTabs-indicator': {
-    background: 'linear-gradient(45deg, #FF6B6B, #4ECDC4)',
+    background: 'linear-gradient(45deg, #97abe0ff, #4ECDC4)',
     height: '4px',
     borderRadius: '2px',
   }
