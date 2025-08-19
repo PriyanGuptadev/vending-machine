@@ -16,7 +16,7 @@ Full stack vending machine application with a React + TypeScript frontend and a 
 
 1. **Navigate to backend directory:**
    ```bash
-   cd vending-machine-backend
+   cd api
    ```
 2. **Install dependencies:**
    ```bash
@@ -37,7 +37,7 @@ Full stack vending machine application with a React + TypeScript frontend and a 
 
 1. **Navigate to frontend directory:**
    ```bash
-   cd vending-machine/vending-machine-frontend
+   cd client
    ```
 2. **Install dependencies:**
    ```bash
