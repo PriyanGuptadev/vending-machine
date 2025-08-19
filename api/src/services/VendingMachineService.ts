@@ -57,17 +57,11 @@ export class VendingMachineService {
     });
 
     const change = cashInserted - (chocolate.price * noOfChocolates);
-    console.log(noOfChocolates);
-    
-    console.log(chocolate.price * noOfChocolates);
     
 
     await prisma.userCash.update({
       where : { id : 1 },
-      data : {
-        cash : {
-          increment : change
-        }}
+      data : { cash : user.cash - (chocolate.price * noOfChocolates)}
     })
 
 
